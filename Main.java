@@ -25,6 +25,14 @@ public class Main {
             System.out.println("WELLCOME TO SHOE STORE!");
             System.out.println("=======================");
 
+            System.out.print("ENTER YOUR NAME: ");
+            name = c.nextLine();
+
+            System.out.print("ENTER YOUR AGE: ");
+            age = c.nextInt();
+
+            System.out.printf("NAME: %s \nAGE: %d years old\n", name, age);
+
             System.out.print("DO YOU WANT TO BUY AGAIN?(y/n): ");
             response = c.next().toLowerCase();
             buyAgain = response.equalsIgnoreCase("y");
