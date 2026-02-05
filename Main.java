@@ -21,6 +21,10 @@ public class Main {
 
         while (buyAgain) {
 
+            System.out.println("==========");
+            System.out.println("WELLCOME TO SHOE STORE!");
+            System.out.println("==========");
+
             System.out.print("DO YOU WANT TO BUY AGAIN?(y/n): ");
             response = c.next().toLowerCase();
             buyAgain = response.equalsIgnoreCase("y");
