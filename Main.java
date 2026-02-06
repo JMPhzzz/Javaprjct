@@ -6,6 +6,7 @@ public class Main {
 
 		String name;
         String response;
+        String choose = "";
 
         int age;
 
@@ -30,8 +31,25 @@ public class Main {
 
             System.out.print("ENTER YOUR AGE: ");
             age = c.nextInt();
+            c.nextLine();
 
-            System.out.printf("NAME: %s \nAGE: %d years old\n", name, age);
+            System.out.print("ARE YOU A MINIR, SENIOR, OR A ADULT: ");
+            choose = c.nextLine().toUpperCase();
+
+            switch (choose) {
+                case "MINOR":
+                    totalds = price * minor;
+
+                    totalamt = price - totalds;
+
+                    System.out.println("=============");
+                    System.out.println("ORDER RECEIPT");
+                    System.out.println("=============");
+
+                    System.out.printf("PRICE: ₱%.2f\n", price);
+                    System.out.printf("DISCOUNT: ₱%.2f\n", totalds);
+                    System.out.printf("TOTAL: ₱%.2f\n", totalamt);
+            }
 
             System.out.print("DO YOU WANT TO BUY AGAIN?(y/n): ");
             response = c.next().toLowerCase();
