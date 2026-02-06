@@ -49,6 +49,35 @@ public class Main {
                     System.out.printf("PRICE: ₱%.2f\n", price);
                     System.out.printf("DISCOUNT: ₱%.2f\n", totalds);
                     System.out.printf("TOTAL: ₱%.2f\n", totalamt);
+                    break;
+                case "SENIOR":
+                    totalds = price * senior;
+
+                    totalamt = price - totalds;
+
+                    System.out.println("=============");
+                    System.out.println("ORDER RECEIPT");
+                    System.out.println("=============");
+
+                    System.out.printf("PRICE: ₱%.2f\n", price);
+                    System.out.printf("DISCOUNT: ₱%.2f\n", totalds);
+                    System.out.printf("TOTAL: ₱%.2f\n", totalamt);
+                    break;
+                case "ADULT":
+                    totalds = price * adult;
+
+                    totalamt = price - totalds;
+
+                    System.out.println("=============");
+                    System.out.println("ORDER RECEIPT");
+                    System.out.println("=============");
+
+                    System.out.printf("PRICE: ₱%.2f\n", price);
+                    System.out.printf("DISCOUNT: ₱%.2f\n", totalds);
+                    System.out.printf("TOTAL: ₱%.2f\n", totalamt);
+                    break;
+                default:
+                    System.out.println("INVALID SELECTIONS!!");
             }
 
             System.out.print("DO YOU WANT TO BUY AGAIN?(y/n): ");
